@@ -1,16 +1,24 @@
 # 📧 Spam Email Classifier
 
-A Machine Learning project that classifies an email as **Spam** or **Ham (Not Spam)** using Natural Language Processing (NLP) and a Support Vector Machine (SVM) classifier.
+A Machine Learning project that classifies emails as **Spam** or **Ham (Not Spam)** using **Natural Language Processing (NLP)**, **TF-IDF Vectorization**, and a **Support Vector Machine (SVM)** model.
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Try the application here:**
+
+https://email-spam-classifier-9ezwd7up4y97ed4jqdbwyx.streamlit.app/
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates a complete NLP workflow for spam email classification.
+This project demonstrates an end-to-end NLP workflow for spam email classification.
 
-The dataset is preprocessed using common NLP techniques, converted into numerical features using **TF-IDF Vectorization**, and then classified using a **Support Vector Machine (SVM)** model.
+The email dataset is preprocessed using common NLP techniques, transformed into numerical features using **TF-IDF Vectorization**, and classified using a **Support Vector Machine (SVM)**.
 
-A simple **Streamlit web application** is included, allowing users to enter any email message and instantly check whether it is spam or not.
+To make the project interactive, a **Streamlit web application** allows users to enter any email message and instantly predict whether it is **Spam** or **Ham**.
 
 ---
 
@@ -20,7 +28,7 @@ A simple **Streamlit web application** is included, allowing users to enter any 
 * Text cleaning and normalization
 * Stopword removal
 * TF-IDF Vectorization
-* Spam prediction using SVM
+* Spam email prediction using SVM
 * Interactive Streamlit web application
 * Saved trained model for fast predictions
 
@@ -59,19 +67,19 @@ Spam-Email-Classifier/
 
 ## ⚙️ Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/YourUsername/NLP-Projects.git
+git clone https://github.com/Himanshu-97-cloud/Spam-Email-Classifier.git
 ```
 
-Go to the project folder
+Go to the project directory:
 
 ```bash
-cd NLP-Projects/Spam-Email-Classifier
+cd Spam-Email-Classifier
 ```
 
-Install the required libraries
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -81,7 +89,7 @@ pip install -r requirements.txt
 
 ## 🏋️ Train the Model
 
-Run the following command once to train the model and save it.
+Run the following command once to train and save the model.
 
 ```bash
 python train_model.py
@@ -100,32 +108,32 @@ This will generate:
 streamlit run app.py
 ```
 
-The application will open in your browser.
+The application will open automatically in your browser.
 
 ---
 
 ## 🧠 NLP Pipeline
 
-1. Load Dataset
-2. Clean Dataset
-3. Convert labels to numerical values
-4. Lowercase text
+1. Load the dataset
+2. Clean and prepare the data
+3. Convert labels into numerical values
+4. Convert text to lowercase
 5. Remove special characters
 6. Expand contractions
 7. Tokenize text
 8. Remove stopwords
 9. Convert text into TF-IDF vectors
-10. Train Support Vector Machine (SVM)
-11. Save trained model
-12. Predict new email messages
+10. Train the Support Vector Machine (SVM)
+11. Save the trained model
+12. Predict whether new emails are Spam or Ham
 
 ---
 
 ## 📊 Model Used
 
-* Support Vector Machine (SVM)
+### Support Vector Machine (SVM)
 
-SVM was selected for deployment because it achieved the best performance among the models tested during experimentation.
+The deployed application uses an **SVM classifier**, which achieved the best performance during experimentation.
 
 Other models explored during development include:
 
@@ -135,23 +143,21 @@ Other models explored during development include:
 
 ---
 
-## 📸 Demo
+## 📸 Example
 
-Enter any email message into the Streamlit application.
+### Input
 
-Example:
-
-```
+```text
 Congratulations!
 
 You have won a FREE iPhone.
 
-Click the link below to claim your prize.
+Click the link below to claim your prize now.
 ```
 
-Prediction:
+### Prediction
 
-```
+```text
 🚨 Spam Email
 ```
 
@@ -159,14 +165,14 @@ Prediction:
 
 ## 📚 Learning Outcomes
 
-This project helped me understand:
+Through this project, I learned:
 
-* NLP preprocessing
-* Text vectorization using TF-IDF
+* NLP text preprocessing
+* TF-IDF Vectorization
 * Spam email classification
 * Machine Learning model training
-* Model serialization using Joblib
-* Building and deploying a Streamlit application
+* Saving and loading models using Joblib
+* Building and deploying Streamlit applications
 
 ---
 
@@ -174,4 +180,4 @@ This project helped me understand:
 
 **Himanshu Pal**
 
-If you found this project helpful, feel free to ⭐ the repository.
+If you found this project useful, consider giving it a ⭐ on GitHub.
