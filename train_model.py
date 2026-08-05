@@ -13,6 +13,7 @@ from sklearn.svm import SVC
 
 # Download NLTK files
 nltk.download("punkt")
+nltk.download("punkt_tab")
 nltk.download("stopwords")
 
 # Load Dataset
